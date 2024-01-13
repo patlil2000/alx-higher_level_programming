@@ -1,0 +1,5 @@
+#!/bin/bash
+import os
+import py_compile
+filename = os.environ['PYFILE']
+py_compile.compile(filename)
