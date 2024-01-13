@@ -1,3 +1,3 @@
 #!/usr/bin/pyton3
-if __name__ == "__main__":
-    import this
+import this
+print(this.s)
