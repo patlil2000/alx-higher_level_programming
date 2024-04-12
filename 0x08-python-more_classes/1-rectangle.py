@@ -2,6 +2,7 @@
 """A Module that defines a class"""
 
 class Rectangle:
+    """This defines a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle"""
         self.__width = width
