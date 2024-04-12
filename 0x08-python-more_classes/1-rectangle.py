@@ -5,8 +5,18 @@ class Rectangle:
     """This defines a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle"""
-        self.__width = width
-        self.__height = height
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        elif width < 0:
+            raise ValueError("width must be >= 0")
+        else:
+            self.__width = width
+        if not isinstance(height, int):
+            raise TypeError("height mnust be an integer")
+        elif height < 0:
+            raise ValueError("height must >= 0")
+        else:
+            self.__height = height
     @property
     def width(self):
         """Retrieves the width"""
