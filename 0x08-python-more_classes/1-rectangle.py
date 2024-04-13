@@ -17,6 +17,7 @@ class Rectangle:
             raise ValueError("height must >= 0")
         else:
             self.__height = height
+
     @property
     def width(self):
         """Retrieves the width"""
@@ -30,6 +31,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
     @property
     def height(self):
         """Reteives the height"""
