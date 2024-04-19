@@ -1,6 +1,5 @@
-#usr/bin/python3
-
-"""This returns a list of attribute and methods"""
+#!/usr/bin/python3
+"""A modulue that returns a list of attributes and methods"""
 def lookup(obj):
-    """This returns a list of attributes"""
+    """Returns a list"""
     return dir(obj)
