@@ -12,7 +12,6 @@ class Student:
         """Returns a dictionary representattion"""
         dict_list = {}
         for attr, value in self.__dict__.items():
-            if isinstance(value,(list,dict,str,int,bool)):
-                dict_list[attr] = value
+            dict_list[attr] = value
         return dict_list
 
