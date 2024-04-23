@@ -9,4 +9,10 @@ class Student:
         self.last_name = last_name
         self.age = age
     def to_json(self):
+        """Returns a dictionary representattion"""
+        dict_list = {}
+        for attr, value in self.__dict__.items():
+            if isinstance(value,(list,dict,str,int,bool)):
+                dict_list[attr] = value
+        return dict_list
 
