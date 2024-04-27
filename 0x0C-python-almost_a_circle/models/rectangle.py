@@ -117,7 +117,18 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
     
     def update(self, *args):
-        """Updates the rectangle"""
-       self.id, self.__width, self.__height, self.__x, self.__y = arg
-
+        """Updates the class"""
+        if not args:
+            print('No argument provided')
+            return
+        if len(args) >= 1:
+            self.id = args[0]
+        if len(args) >= 2:
+            self.__width = args[1]
+        if len(args) >= 3:
+            self.__height = args[2]
+        if len(args) >= 4:
+            self.__x = args[3]
+        if len(args) >= 5:
+            self.__y = args{4]
             
