@@ -116,7 +116,7 @@ class Rectangle(Base):
         """String representation of object"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
     
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates the class"""
         if not args:
             print('No argument provided')
