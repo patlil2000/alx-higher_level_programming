@@ -18,14 +18,14 @@ Addition of one positive and one negative:
 
 Addition of two negative numbers:
 	>>> add_integer(-6,-7)
-	13
+	-13
 
 Addition of zero to a positive number:
-	>>>add_integer(0,3)
+	>>> add_integer(0,3)
 	3
 
 Addition of zero to a negative number:
-	>>>add_integer(0,-2)
+	>>> add_integer(0,-2)
 	-2
 
 Addition of two positive floats:
@@ -34,7 +34,7 @@ Addition of two positive floats:
 
 Addition of two negative floats:
 	>>> add_integer(-4.00,-5.00)
-	9
+	-9
 
 Addition of  positive and negative floats:
 	>>> add_integer(3.00,-5.00)
