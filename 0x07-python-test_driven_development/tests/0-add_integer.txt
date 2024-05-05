@@ -1,0 +1,45 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+First import add_integer from 0-add_integer:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Addition of two positive number:
+	>>> add_integer(1, 2)
+	3
+
+Addition of one positive and one negative:
+	>>> add_integer(-1,3)
+	2
+
+Addition of two negative numbers:
+	>>> add_integer(-6,-7)
+	13
+
+Addition of zero to a positive number:
+	>>>add_integer(0,3)
+	3
+
+Addition of zero to a negative number:
+	>>>add_integer(0,-2)
+	-2
+Addition of two positive floats:
+	>>> add_integer(4.004,5.0007)
+	9
+Addition of two negative floats:
+	>>> add_integer(-4.00,-5.00)
+	9
+Addition of  positive and negative floats:
+	>>> add_integer(3.00,-5.00)
+	-2
+Addition of zero to a float:
+	>>> add_integer(0,3.00)
+	3
+Adding an integer to a float:
+	>>> add_integer(4,9.00)
+	13
+
