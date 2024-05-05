@@ -27,19 +27,47 @@ Addition of zero to a positive number:
 Addition of zero to a negative number:
 	>>>add_integer(0,-2)
 	-2
+
 Addition of two positive floats:
 	>>> add_integer(4.004,5.0007)
 	9
+
 Addition of two negative floats:
 	>>> add_integer(-4.00,-5.00)
 	9
+
 Addition of  positive and negative floats:
 	>>> add_integer(3.00,-5.00)
 	-2
+
 Addition of zero to a float:
 	>>> add_integer(0,3.00)
 	3
+
 Adding an integer to a float:
 	>>> add_integer(4,9.00)
 	13
 
+Adding a string to an integer:
+	>>> add_integer(4, "hi")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+Adding a string to a float:
+	>>> add_integer("hi",3.00)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Adding two strings together:
+	>>> add_integer("hi" , "hi")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Addition when no arguments provided:
+	>>> add_integer()
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
