@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def copy_list(l):
-    new_list = l[:]
-    return new_list
+"""A module that copies a list"""
+def copy_list(mylist):
+    """This function copies a list"""
+    return (mylist.copy())
