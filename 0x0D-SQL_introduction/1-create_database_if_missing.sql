@@ -1,2 +1,2 @@
---A script that creates a database
+--A sql script
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
