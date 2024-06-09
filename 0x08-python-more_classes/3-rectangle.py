@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines a Rectanle"""
+"""Defines a Rectabgle"""
+
+
 class Rectangle:
 
     """Defines the rectangle class"""
@@ -61,13 +63,11 @@ class Rectangle:
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
-        """Prints a rectangle with #"""
+        """A string representation
+        of rectangle with character #"""
         if self.__width == 0 or self.__height == 0:
-             return " "
-        else:
-             rectangle = ""
-             for x in range(self.__height):
-                 for y in range(self.__width):
-                     rectangle += "#"
-                 rectangle += "\n"
-             return rectangle
+            return ""
+        result = []
+        for _ in range(self.__height):
+            result.append("#" * self.__width)
+        return "\n".join(result)
