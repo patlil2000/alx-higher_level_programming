@@ -12,4 +12,4 @@ def is_same_class(obj, a_class):
     Returns:
         True or false
     """
-    return obj.__class__ == a_class
+    return obj.__class__ is a_class
