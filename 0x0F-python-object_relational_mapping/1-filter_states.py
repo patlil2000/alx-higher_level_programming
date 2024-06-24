@@ -14,7 +14,7 @@ if __name__ == "__main__":
     cursor.execute("""
                    SELECT id, name
                    FROM states
-                   WHERE LEFT(name, 1)='N'
+                   WHERE BINARY LEFT(name, 1)='N'
                    ORDER BY id ASC
                    """)
     rows = cursor.fetchall()
