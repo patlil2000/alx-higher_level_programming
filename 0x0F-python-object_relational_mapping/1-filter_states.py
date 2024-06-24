@@ -11,10 +11,12 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cursor = db.cursor()
-    cursor.execute("SELECT id, name
+    cursor.execute("""
+                   SELECT id, name
                    FROM states
                    WHERE LEFT(name, 1)='N'
-                   ORDER BY id ASC")
+                   ORDER BY id ASC
+                   """)
     rows = cursor.fetchall()
     for row in rows:
         print(row)
