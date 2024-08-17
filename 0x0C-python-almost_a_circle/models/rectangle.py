@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""A module that contains a class Rectangle 
+"""A module that contains a class Rectangle
 that inherits from base"""
 
 from models.base import Base
+
 
 class Rectangle(Base):
     """A class rectangle"""
@@ -36,7 +37,7 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = y
-    
+
     # A list of the getter functions
 
     @property
@@ -114,8 +115,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """String representation of object"""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
-    
+        return(f"[Rectangle] ({self.id})"
+               "{self.__x}/{self.__y} - {self.__width}/{self.__height}")
+
     def update(self, *args, **kwargs):
         """Updates the class"""
         if args:
@@ -134,5 +136,3 @@ class Rectangle(Base):
                 setattr(self, item, value)
         else:
             print("you need to pass arguments")
-                
-            
