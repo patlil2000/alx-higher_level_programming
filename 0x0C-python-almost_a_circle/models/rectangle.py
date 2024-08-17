@@ -18,7 +18,7 @@ class Rectangle(Base):
             self.__width = width
 
         if not isinstance(height, int):
-            raise TypeError("height must be an intger")
+            raise TypeError("height must be an integer")
         elif height <= 0:
             raise ValueError("height must be > 0")
         else:
@@ -86,7 +86,7 @@ class Rectangle(Base):
     def x(self, value):
         """Sets the property of x"""
         if not isinstance(value, int):
-            raise TypeError("x must be an intger")
+            raise TypeError("x must be an integer")
         elif value < 0:
             raise ValueError("x must be >= 0")
         else:
