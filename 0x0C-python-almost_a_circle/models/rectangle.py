@@ -140,3 +140,11 @@ class Rectangle(Base):
                 setattr(self, item, value)
         else:
             print("you need to pass arguments")
+
+    def to_dictionary(self):
+        """returns a dictionary representation
+        of the object"""
+        dictionary = {}
+        for attr, key in self.__dict__.items():
+            dictionary[attr] = value
+        return dictionary
