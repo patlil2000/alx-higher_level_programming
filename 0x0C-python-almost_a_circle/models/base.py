@@ -65,12 +65,12 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
-        filename = cls.__name__ + ".json"
+        filename = f"{cls.__name__ }.json"
         if not os.path.exists(filename):
             return []
-        else:
-            with open(filename, "r") as file:
-                data = file.read()
-            list_dict = data.from_json_string(data)
-            instances = [cls.create(**d) for d in list_dict]
-            return instances
+        
+        with open(filename, "r") as file:
+            data = file.read()
+        list_dict = data.from_json_string(data)
+        instances = [cls.create(**d) for d in list_dict]
+        return instances
