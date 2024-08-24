@@ -56,8 +56,5 @@ class Base:
             dummy = (2, 1)
         elif class.__name__ == "Square":
             dummy = (2)
-        else:
-            dummy = None
-        if dummy is not None:
-            dummy.update(self, *args, **dictionary)
+        dummy.update(**dictionary)
         return dummy
