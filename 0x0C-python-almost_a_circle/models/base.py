@@ -2,7 +2,7 @@
 """A module containing he base of all other classes"""
 
 import json
-
+import os
 
 class Base:
     """the class base"""
@@ -61,3 +61,16 @@ class Base:
         if dummy is not None:
             dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+        filename = cls.__name__ + ".json"
+        if not os.path.exists(filename):
+            return []
+        else:
+            with open(filename, "r") as file:
+                data = file.read()
+            list_dict = data.from_json_string(json_str)
+            instances = [cls.create(**d) for d in list_dict]
+            return instances
