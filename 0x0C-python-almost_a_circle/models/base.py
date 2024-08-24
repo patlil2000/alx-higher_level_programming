@@ -59,5 +59,5 @@ class Base:
         else:
             dummy = None
         if dummy is not None:
-            dummy.update(**dictionary)
+            dummy.update(*args, **dictionary)
         return dummy
