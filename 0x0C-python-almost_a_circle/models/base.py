@@ -53,8 +53,8 @@ class Base:
         all attributes already set:
         """
         if cls.__name__ == "Rectangle":
-            dummy = (2, 1)
+            dummy = cls(1, 1)
         elif class.__name__ == "Square":
-            dummy = (2)
+            dummy = cls(2)
         dummy.update(**dictionary)
         return dummy
