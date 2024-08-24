@@ -71,6 +71,6 @@ class Base:
         else:
             with open(filename, "r") as file:
                 data = file.read()
-            list_dict = data.from_json_string(json_str)
+            list_dict = data.from_json_string(data)
             instances = [cls.create(**d) for d in list_dict]
             return instances
